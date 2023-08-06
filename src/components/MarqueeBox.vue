@@ -58,6 +58,7 @@
         </svg>
         
         <b> MAGO KIDS CENTER 2023 精彩集锦</b>
+        
     
 
       </div>
@@ -97,7 +98,7 @@
   }
 
   100% {
-    transform: translate3d(-575px, 0, 0);
+    transform: translate3d(-525px, 0, 0);
   }
 }
 </style>

@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import TheWelcome from '../components/TheWelcome.vue'
+import TopShow from '../components/TopShow.vue'
 </script>
 
 <template>
   <main>
+    <TopShow>
+
+    </TopShow>
     <!-- <TheWelcome images="/src/assets/1.jfif" name="DING · YI MING" 
     title="旋转风车" 
     minTitle="SPIKE PRIME 进阶"
