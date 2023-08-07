@@ -13,12 +13,12 @@ defineProps<{
   <div class="">
 
      
-    <marquee> </marquee>
+    <marqueeRight> </marqueeRight>
    <div>
   
 <marqueePic></marqueePic>
    </div>
-   <marquee> </marquee>
+   <marqueeRight> </marqueeRight>
    <div>
     MAGO 图片轮播
 
