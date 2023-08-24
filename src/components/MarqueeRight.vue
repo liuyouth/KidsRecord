@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // @ts-ignore
+// 使用animejs 制作的动画
 import anime from 'animejs';
 import { onMounted } from 'vue';
 onMounted(() => {
@@ -8,11 +9,12 @@ onMounted(() => {
         translateX: function (el, i, l) {
             xTrans[i] = { x: i * 600 };
             return i * 600;
+             // 每个轮播div的宽度
         },
     });
     anime({
         targets: xTrans,
-        duration: 7000, //走一周持续时间
+        duration: 7000, //走一周持续时间   需要和 div的个数和宽度以及速度相匹配才可以做到无跳动
         easing: 'linear',
         x: "-=600",
         loop: true,

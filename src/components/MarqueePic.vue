@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // @ts-ignore
+// 使用animejs 制作的动画
 import anime from 'animejs';
 import { onMounted } from 'vue';
 import TheWelcome from '../components/TheWelcome.vue'
@@ -9,11 +10,12 @@ onMounted(() => {
         translateX: function (el, i, l) {
             xTrans[i] = { x: i * 600 };
             return i * 600;
+            // 每个轮播div的宽度
         },
     });
     anime({
         targets: xTrans,
-        duration: 24000, //走一周持续时间
+        duration: 24000, //走一周持续时间   需要和 div的个数和宽度以及速度相匹配才可以做到无跳动
         easing: 'linear',
         x: "+=4800",
         loop: true,
@@ -31,9 +33,6 @@ onMounted(() => {
 <template>
     <div style="overflow: hidden;">
         <div class="marqueeBox">
-
-
-          
             <div class="m-topic">
                 <TheWelcome images="/src/assets/1.jfif" name="DING · YI MING" title="1旋转风车" minTitle="SPIKE PRIME 进阶" />
             </div>
@@ -46,7 +45,6 @@ onMounted(() => {
             <div class="m-topic">
                 <TheWelcome images="/src/assets/4.jfif" name="LI · NUO HAN" title="4陀螺发射器" minTitle="SPIKE PRIME 高级" />
             </div>
-       
             <div class="m-topic">
                 <TheWelcome images="/src/assets/1.jfif" name="DING · YI MING" title="5旋转风车" minTitle="SPIKE PRIME 进阶" />
             </div>
@@ -59,7 +57,6 @@ onMounted(() => {
             <div class="m-topic">
                 <TheWelcome images="/src/assets/4.jfif" name="LI · NUO HAN" title="8陀螺发射器" minTitle="SPIKE PRIME 高级" />
             </div>
-
         </div>
     </div>
 </template>

@@ -11,22 +11,17 @@ defineProps<{
 
 <template>
   <div class="">
-
-     
     <marqueeRight> </marqueeRight>
-   <div>
-  
-<marqueePic></marqueePic>
-   </div>
-   <marqueeRight> </marqueeRight>
-   <div>
-    MAGO 图片轮播
-
-   </div>
-   <marqueeBox></marqueeBox>
+    <div>
+      <marqueePic></marqueePic>
+    </div>
+    <marqueeRight> </marqueeRight>
+    <div>
+      MAGO 图片轮播
+    </div>
+    <marqueeBox></marqueeBox>
   </div>
 </template>
 
 <style scoped>
-
 </style>
